@@ -1,0 +1,18 @@
+<div>
+       <h1>{{header | lowercase}}</h1>
+       <input type="text" [(ngModel)]="header"> <br>
+       <p>&nbsp;</p>
+        <ul>
+          <li *ngFor="let color of colors">
+            {{color}}
+           </li>
+        </ul>
+        <form>
+            <div>
+                <label for="new-color-input">New Color :</label>
+                <input type="text" id="new-color-input" 
+                    name="newColor" [(ngModel)]="newColor" (keyup.enter)="addColor()"> 
+            </div>
+         <button type="button" (click)="addColor()"> Add Color </button>
+        </form>
+    </div>

@@ -1,0 +1,11 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+$header-color: #666;
+
+body {
+    h1 {
+        color: $header-color;
+    }
+    margin:30px;
+    padding:10px;
+}
